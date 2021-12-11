@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{ 
+      font-family: 'Kumbh Sans', sans-serif;
+      background-color: hsl(185, 75%, 39%);
+      background-repeat: no-repeat;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    .bg-top{
+      align-self: flex-start;
+      position: relative;
+      left: -300px;
+    }
+    .bg-bottom{
+      align-self: flex-end;
+      position: relative;
+      right: -320px;
+      z-index: -1;
+    }
+    .container{
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      position: absolute;
+      text-align: center;
+    }
+    .container .bg-card{
+      border-radius: 10px 10px 0 0;
+    }
+    .container .victor{
+      width: 96px;
+      border: 5px solid #fff;
+      border-radius: 60px;
+      position: absolute;
+      top: 90px;
+      left: 125px;
+    }
+    .container .name{
+      margin-top: 80px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+    .container .name span{
+      font-size: 16px;
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+    .container .city{
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+    .container .stat{
+      margin-top: 20px;
+      padding: 10px 0;
+      border-top: 1px solid hsl(0, 0%, 59%);
+      display: flex;
+      justify-content: space-around;
+    }
+    .container .stat .stat-num{
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+    .container .stat .stat-title{
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      color: hsl(0, 0%, 59%);
+    }
+  </style>
+</head>
+<body>
+  <img class="bg-top" src="images/bg-pattern-top.svg" alt="bg-top">
+  <div class="container">
+    <img class="bg-card" src="images/bg-pattern-card.svg" alt="bg-card">
+    <img class="victor" src="images/image-victor.jpg" alt="victor">
+    <p class="name">Victor Crest <span>26</span></p>
+    <p class="city">London</p>
+    <div class="stat">
+      <div class="stat-followers">
+        <p class="stat-num">80K</p>
+        <p class="stat-title">Followers</p>
+      </div>
+      <div class="stat-likes">
+        <p class="stat-num">803K</p>
+        <p class="stat-title">Likes</p>
+      </div>
+      <div class="stat-photos">
+        <p class="stat-num">1.4K</p>
+        <p class="stat-title">Photos</p>
+      </div>
+    </div>
+  </div>
+  <img class="bg-bottom" src="images/bg-pattern-bottom.svg" alt="bg-bottom">
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdullah Al-Karim</a>.
+  </div>
+</body>
+</html>
